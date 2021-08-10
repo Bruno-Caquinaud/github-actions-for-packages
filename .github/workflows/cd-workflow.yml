@@ -61,11 +61,11 @@ jobs:
       with:
         push: true
         tags: user/app:lates
-        #username: ${{github.actor}}
-        #password: ${{secrets.GITHUB_TOKEN}}
-        #registry: https://ghcr.io
-        #repository: Bruno-Caquinaud/github-actions-for-packages/tic-tac-toe
-        #tag_with_sha: true
+        username: ${{github.actor}}
+        password: ${{secrets.GITHUB_TOKEN}}
+        registry: https://ghcr.io
+        repository: Bruno-Caquinaud/github-actions-for-packages/tic-tac-toe
+        tag_with_sha: true
         #context: .
         #push: true
         #tags: user/app:latest
