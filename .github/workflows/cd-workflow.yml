@@ -61,8 +61,8 @@ jobs:
       with:
         push: true
         tags: user/app:latest
-        username: ${{github.actor}}
-        password: ${{secrets.GITHUB_TOKEN}}
+        secrets: |
+            GIT_AUTH_TOKEN=${{ secrets.GITHUB_TOKEN }}
         registry: https://ghcr.io
         repository: Bruno-Caquinaud/github-actions-for-packages/tic-tac-toe
         tag_with_sha: true
