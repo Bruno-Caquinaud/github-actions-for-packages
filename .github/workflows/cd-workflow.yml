@@ -64,3 +64,6 @@ jobs:
         registry: https://ghcr.io
         repository: Bruno-Caquinaud/github-actions-for-packages/tic-tac-toe
         tag_with_sha: true
+        context: .
+        push: true
+        tags: user/app:latest
